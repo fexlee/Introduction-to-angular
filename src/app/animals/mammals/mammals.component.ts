@@ -41,6 +41,10 @@ export class MammalsComponent implements OnInit {
     this.mammalSelected = 'You selected ' + item;
   }
 
+  /**
+   * OnINIT is a life cycle hook called by Angular to indicate that
+   * Angular is done creating the component.
+   */
   ngOnInit() {
     this.types = angularConceptsListJSON.animalsList.find(item => {
       return item.id === 'mammals';
