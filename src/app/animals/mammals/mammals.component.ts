@@ -6,6 +6,10 @@
 import { Component, OnInit } from '@angular/core';
 const angularConceptsListJSON = require('../../../data/angular-concepts.json');
 
+/**
+ * The @Component() decorator identifies the class immediately below it as a component,
+ * and provides the template and related component-specific metadata.
+ */
 @Component({
   selector: 'app-mammals',
   templateUrl: './mammals.component.html',
@@ -13,12 +17,16 @@ const angularConceptsListJSON = require('../../../data/angular-concepts.json');
 })
 export class MammalsComponent implements OnInit {
 /*
-1. Event binding lets your app respond to user input in the target
-environment by updating your application data.
+  1. Event binding lets your app respond to user input in the target
+  environment by updating your application data.
 
-2. Property binding lets you interpolate values that
-are computed from your application data into the HTML.
+  - ngModel
+  - Structural directives: They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.
 
+  2. Property binding lets you interpolate values that
+  are computed from your application data into the HTML.
+
+  - Interpolation
 */
   public title = 'Mammals';
   public types: Array<any> = [];
