@@ -1,7 +1,9 @@
 /**
- * Components: Every Angular application has at least one component, the root component that connects a component hierarchy
- * with the page document object model (DOM). Each component defines a class that contains application data and
- * logic, and is associated with an HTML template that defines a view to be displayed in a target environment.
+ * Components: Every Angular application has at least one component, the root
+ * component that connects a component hierarchy with the page
+ * document object model (DOM). Each component defines a class that contains
+ * application data and logic, and is associated with an HTML template that
+ * defines a view to be displayed in a target environment.
  */
 import { Component, OnInit } from '@angular/core';
 const angularConceptsListJSON = require('../../../data/angular-concepts.json');
@@ -21,7 +23,8 @@ export class MammalsComponent implements OnInit {
   environment by updating your application data.
 
   - ngModel
-  - Structural directives: They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.
+  - Structural directives:
+  They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.
 
   2. Property binding lets you interpolate values that
   are computed from your application data into the HTML.
