@@ -1,0 +1,117 @@
+{
+  "_title": "Angular Data",
+  "_created_by": "Félix Lee Pan <fexlee29@gmail.com>",
+  "_date": "April 15th, 2020",
+  "_description": "Some data for starting learning AngularJS",
+  "angularConceptsList": [
+    {
+      "concept": "Angular Moldules",
+      "definition": "An NgModule declares a compilation context for a set of components\nthat is dedicated to an application domain, a workflow,\nor a closely related set of capabilities.\n\nAn NgModule can associate its components with related code,\nsuch as services, to form functional units."
+    },
+    {
+      "concept": "Components",
+      "definition": "A component define a class that contains application data and logic,\nand is associated with an HTML template that defines a\nview to be displayed in a target environment."
+    },
+    {
+      "concept": "Data binding",
+      "definition": "1. Event binding lets your app respond to user input in the target\nenvironment by updating your application data.\n\n2. Property binding lets you interpolate values that\nare computed from your application data into the HTML."
+    },
+    {
+      "concept": "Dependency injection",
+      "definition": "Lets you keep your component classes lean and efficient.\n\nThey don't fetch data from the server, validate user input,\nor log directly to the console; they delegate such tasks to services."
+    }
+  ],
+  "resourcesList": [
+    {
+      "name": "Animals",
+      "path": "/animals"
+    },
+    {
+      "name": "Cars",
+      "path": "/cars"
+    }
+  ],
+  "animalsList": [
+    {
+      "id": "mammals",
+      "name" : "Mammals",
+      "path": "./mammals",
+      "list": [
+        "Sloth (Perezoso)",
+        "Monkeys (Mono)",
+        "Jaguar (Jaguar)",
+        "Ocelot (Ocelote)",
+        "Peccary (Armadillo)",
+        "Bat (Bat)",
+        "Opossum (Zarigüeya)"
+      ]
+    },
+    {
+      "id": "reptiles",
+      "name" : "Reptiles",
+      "path": "./reptiles",
+      "list": [
+        "Crocodiles (Cocodrilo)",
+        "Turtles (Tortugas)",
+        "Lizards (Lagartija)",
+        "Iguana (Iguana)"
+      ]
+    }
+  ],
+  "carsList": [
+    {
+      "id": "electric-cars",
+      "name" : "Electric cars",
+      "path": "./electric-cars",
+      "list": [
+        "Audi e-tron(2018)",
+        "BMW i3",
+        "Chevrolet Bolt EV",
+        "Citroën C-Zero",
+        "Honda Clarity Electric",
+        "Hyundai Ioniq Electric",
+        "HyundaKona Electric",
+        "Jaguar Land Rover Jaguar I-Pace",
+        "Kia Soul EV",
+        "Kia e-Niro",
+        "Lightning Lightning GT",
+        "Mahindra e2o plus",
+        "Mahindra e-Verito",
+        "Mercedes-Benz B-Class Electric Drive",
+        "Mercedes-Benz EQC",
+        "Micro Mobility Systems Microlino",
+        "Mitsubishi i-MiEV",
+        "Motores Limpios Zacua",
+        "MW Motors Luka EV",
+        "NIO ES8",
+        "Nissan Leaf",
+        "ECOmove QBeak",
+        "Peugeot i0n",
+        "Rayttle E28",
+        "Renault Zoe",
+        "Renault Twizy",
+        "Smart Smart electric drive",
+        "Sono Motors Sion",
+        "Stevens ZeCar",
+        "Tesla Model S",
+        "Tesla Model X",
+        "Tesla Model 3",
+        "Venturi Fétish",
+        "Volkswagen e-Golf",
+        "Volkswagen e-Up"
+      ]
+    },
+    {
+      "id": "trucks",
+      "name" : "Trucks",
+      "path": "./trucks",
+      "list": [
+        "Chevrolet LUV",
+        "Toyota Truck Xtracab SR5",
+        "Dodge Ram",
+        "Chevrolet Blazer",
+        "Chevrolet Tahoe"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<div class="content" role="main">
+
+  <h2>{{ title }}</h2>
+  <p>{{ mammalSelected }}</p>
+
+  <div class="card-container">
+    <div *ngFor="let item of types" class="card" (click)="SelectMammal(item)">
+      <span>{{ item }}</span>
+    </div>
+  </div>
+
+</div>
