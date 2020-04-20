@@ -9,13 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+/**
+ * Import all components
+ */
+import { HomeComponent } from './home/home.component';
 /**
  * Import all child module
  */
 import { AnimalsModule } from './animals/animals.module';
 import { CarsModule } from './cars/cars.module';
-import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
