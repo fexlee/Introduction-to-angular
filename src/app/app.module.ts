@@ -1,3 +1,8 @@
+/**
+ * An NgModule declares a compilation context for a set of components that is dedicated to an application domain,
+ * a workflow, or a closely related set of capabilities. An NgModule can associate its
+ * components with related code, such as services, to form functional units.
+ */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
