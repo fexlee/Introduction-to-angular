@@ -11,20 +11,18 @@
 
 <div class="content" role="main">
 
-  <h2>{{ title }}</h2>
+  <a class="card" [routerLink]="'/index'">
+    <span>Go back</span>
+  </a>
+
+  <h2>{{ title }} ({{ types.length }})</h2>
+  <p>{{ carSelected }}</p>
 
   <div class="card-container">
-    <a class="card" [routerLink]="'/home'">
-      <span>Go back</span>
-    </a>
-    <a *ngFor="let item of types"  class="card" [routerLink]="item.path">
-      <span>{{ item.name }}</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
+    <div *ngFor="let item of types" class="card" (click)="SelectCar(item)">
+      <span>{{ item }}</span>
+    </div>
   </div>
-
-  <!-- Acts as a placeholder that Angular dynamically fills based on the current router state. -->
-  <router-outlet></router-outlet>
 
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">

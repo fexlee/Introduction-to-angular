@@ -12,26 +12,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /**
  * Import all components
  */
-import { HomeComponent } from './home/home.component';
-/**
- * Import all child module
- */
-import { AnimalsModule } from './animals/animals.module';
-import { CarsModule } from './cars/cars.module';
+import { IndexComponent } from './index/index.component';
+import { CarsComponent } from './cars/cars.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    IndexComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    AnimalsModule,
-    CarsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

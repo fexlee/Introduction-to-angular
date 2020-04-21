@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 // Import all components
-import { HomeComponent } from './home/home.component';
+import { IndexComponent } from './index/index.component';
+import { CarsComponent } from './cars/cars.component';
 
 /*
 
@@ -22,7 +23,10 @@ through the browser history.
 
 const routes: Routes = [
   {
-    path: 'home', component: HomeComponent, // Componente raiz
+    path: 'index', component: IndexComponent
+  },
+  {
+    path: 'cars', component: CarsComponent
   }
 ];
 

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-const angularConceptsListJSON = require('../../../data/angular-concepts.json');
+const dataJSON = require('../../data/data.json');
 
 @Component({
-  selector: 'app-electric-cars',
-  templateUrl: './electric-cars.component.html',
-  styleUrls: ['./electric-cars.component.scss']
+  selector: 'app-cars',
+  templateUrl: './cars.component.html',
+  styleUrls: ['./cars.component.scss']
 })
-export class ElectricCarsComponent implements OnInit {
+export class CarsComponent implements OnInit {
+
 
   public title = 'Electric Cars';
   public types: Array<any> = [];
@@ -34,9 +35,8 @@ export class ElectricCarsComponent implements OnInit {
    * OnINIT is a life cycle hook called by Angular to indicate that Angular is done creating the component.
    */
   ngOnInit() {
-    this.types = angularConceptsListJSON.carsList.find(item => {
+    this.types = dataJSON.carsList.find(item => {
       return item.id === 'electric-cars';
     }).list;
   }
-
 }

@@ -23,39 +23,8 @@
   ],
   "resourcesList": [
     {
-      "name": "Animals",
-      "path": "/animals"
-    },
-    {
       "name": "Cars",
       "path": "/cars"
-    }
-  ],
-  "animalsList": [
-    {
-      "id": "mammals",
-      "name" : "Mammals",
-      "path": "./mammals",
-      "list": [
-        "Sloth (Perezoso)",
-        "Monkeys (Mono)",
-        "Jaguar (Jaguar)",
-        "Ocelot (Ocelote)",
-        "Peccary (Armadillo)",
-        "Bat (Murciélago)",
-        "Opossum (Zarigüeya)"
-      ]
-    },
-    {
-      "id": "reptiles",
-      "name" : "Reptiles",
-      "path": "./reptiles",
-      "list": [
-        "Crocodiles (Cocodrilo)",
-        "Turtles (Tortugas)",
-        "Lizards (Lagartija)",
-        "Iguana (Iguana)"
-      ]
     }
   ],
   "carsList": [
@@ -99,18 +68,6 @@
         "Venturi Fétish",
         "Volkswagen e-Golf",
         "Volkswagen e-Up"
-      ]
-    },
-    {
-      "id": "trucks",
-      "name" : "Trucks",
-      "path": "./trucks",
-      "list": [
-        "Chevrolet LUV",
-        "Toyota Truck Xtracab SR5",
-        "Dodge Ram",
-        "Chevrolet Blazer",
-        "Chevrolet Tahoe"
       ]
     }
   ]
