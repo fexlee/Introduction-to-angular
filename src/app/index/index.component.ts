@@ -27,7 +27,7 @@ export class IndexComponent implements OnInit {
   /*
     1. Event binding lets your website respond to user input by updating your application data.
 
-    - ngModel: it binds the logic data to a HTML element.
+    - ngModel: it binds the logic data to a HTML ELEMENT (It is used only in elements that user can interact).
     - Structural directives: They shape or reshape the DOM's structure,
       typically by adding, removing, or manipulating elements or HTML tags.
 
@@ -37,18 +37,28 @@ export class IndexComponent implements OnInit {
   */
 
   /**
-   * NgModel
+   * NgModel: [(ngModel)]
    */
   public selectedConcept: any; // Type ANY (any type of data)
+
+
+
+
+
   /**
-   * Interpolation
+   * Interpolation {{}}
    */
   public title = 'AngularJS';
+
+
+
+
   /**
-   * Structural directives
+   * Structural directives: *ngIf, *ngFor, *ngSwitch
    */
   public conceptsList = [];
   public resourcesList = [];
+
 
 
 

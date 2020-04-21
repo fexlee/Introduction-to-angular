@@ -14,7 +14,8 @@ export class CarsComponent implements OnInit {
   public cars = [];
   public carSelected = 'Select a car';
 
-  // Add my favorite car
+  // See realtime data binding with interpolation {{}}
+  // my favorite car
 
 
 
@@ -35,7 +36,7 @@ export class CarsComponent implements OnInit {
 
    // Example
 
-
+  // Let's add a new car
 
 
 

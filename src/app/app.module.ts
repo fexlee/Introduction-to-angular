@@ -1,13 +1,11 @@
-/**
- * An NgModule declares a compilation context for a set of components that is dedicated to an application domain,
- * a workflow, or a closely related set of capabilities. An NgModule can associate its
- * components with related code, such as services, to form functional units.
- */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+/**
+ * Our application routing module
+ */
+import { AppRoutingModule } from './app-routing.module';
 /**
  * Import all components
  */
@@ -15,20 +13,27 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { CarsComponent } from './cars/cars.component';
 
-
+/**
+ * @NgModule is a directive that declares a compilation for a set of components
+ *
+ * Components are a logical piece of code for Angular JS application.
+ */
 @NgModule({
+  // Creating the set of component for the module
   declarations: [
     AppComponent,
     IndexComponent,
     CarsComponent
   ],
+  // Importing some extra modules (libraries)
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    // Import our App routing module for the navigation
+    AppRoutingModule,
   ],
-  providers: [],
+  // View Template
   bootstrap: [AppComponent]
 })
 export class AppModule { }
