@@ -15,12 +15,19 @@
     <span>Go back</span>
   </a>
 
-  <h2>{{ title }} ({{ types.length }})</h2>
+  <h2>{{ title }}</h2>
   <p>{{ carSelected }}</p>
 
+  <!-- Add my favorite car -->
+
+
+
+  <!-- ******************** -->
+
+
   <div class="card-container">
-    <div *ngFor="let item of types" class="card" (click)="SelectCar(item)">
-      <span>{{ item }}</span>
+    <div *ngFor="let car of cars" class="card" (click)="SelectCar(car)">
+      <span>{{ car }}</span>
     </div>
   </div>
 

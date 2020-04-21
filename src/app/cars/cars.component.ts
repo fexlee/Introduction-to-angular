@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// Import the data
 const dataJSON = require('../../data/data.json');
 
 @Component({
@@ -10,13 +11,18 @@ export class CarsComponent implements OnInit {
 
 
   public title = 'Electric Cars';
-  public types: Array<any> = [];
+  public cars = [];
   public carSelected = 'Select a car';
+
+  // Add my favorite car
+
+
+
 
   constructor() { }
 
-  public SelectCar(item): void {
-    this.carSelected = 'You selected ' + item;
+  public SelectCar(car): void {
+    this.carSelected = 'You selected ' + car;
   }
 
   // Dependency injection
@@ -31,12 +37,17 @@ export class CarsComponent implements OnInit {
 
 
 
+
+
+
+
+
+
+
   /**
    * OnINIT is a life cycle hook called by Angular to indicate that Angular is done creating the component.
    */
   ngOnInit() {
-    this.types = dataJSON.carsList.find(item => {
-      return item.id === 'electric-cars';
-    }).list;
+    this.cars = dataJSON.carsList;
   }
 }
