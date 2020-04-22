@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 /**
  * Import all components
+ * Components are a logical piece of code for Angular JS application
  */
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
