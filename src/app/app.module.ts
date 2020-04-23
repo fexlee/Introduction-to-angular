@@ -13,6 +13,7 @@ import { CarsComponent } from './cars/cars.component';
  * Our application routing module
  */
 import { AppRoutingModule } from './app-routing.module';
+import { TestComponent } from './test/test.component';
 
 /**
  * @NgModule is a directive that declares a compilation for a set of components
@@ -24,7 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     IndexComponent,
-    CarsComponent
+    CarsComponent,
+    TestComponent
   ],
   // Importing some extra modules (libraries)
   imports: [

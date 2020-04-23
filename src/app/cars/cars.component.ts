@@ -61,7 +61,9 @@ export class CarsComponent implements OnInit {
     this.carSelected = 'You selected ' + car;
   }
 
-
+  public SelectCarTest(): string {
+    return 'Something';
+  }
   // Let's add my favorite car
 
 
@@ -83,7 +85,13 @@ export class CarsComponent implements OnInit {
 
   // Let's add my favorite car
 
+public AddCar(car): void {
+  let newCar = car;
+}
 
+public BtnAddCar(): void {
+  this.AddCar('Toyota');
+}
 
   /** */
 
