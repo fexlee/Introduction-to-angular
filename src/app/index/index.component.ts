@@ -21,58 +21,34 @@ const dataJSON = require('../../data/data.json');
   // The path or URL of a template file for an Angular component (View).
   templateUrl: './index.component.html',
   // One or more paths or URLs for files containing stylesheets to use in this component.
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
 })
 export class IndexComponent implements OnInit {
-  /*
-    1. Event binding lets your website respond to user input by updating your application data.
-
-    - ngModel: it binds the logic data to a HTML ELEMENT (It is used only in elements that user can interact).
-    - Structural directives: They shape or reshape the DOM's structure,
-      typically by adding, removing, or manipulating elements or HTML tags.
-
-    2. Property binding lets you interpolate values into the HTML.
-
-    - Interpolation: the insertion of data into the view.
-  */
-
-  /**
-   * NgModel: [(ngModel)]
-   */
-  public selectedConcept: any; // Type ANY (any type of data)
-
-
-
-
-
   /**
    * Interpolation {{}}
+   * Property binding lets you interpolate values into the HTML.
+   * Interpolation: the insertion of data into the view.
    */
   public title = 'AngularJS';
 
 
 
-
   /**
-   * Structural directives: *ngIf, *ngFor, *ngSwitch
+   * Structural directives: They shape or reshape the DOM's structure,
+   * typically by adding, removing, or manipulating elements or HTML tags.
    */
-  public conceptsList = [];
   public resourcesList = [];
 
 
 
-
-  public SelectItem(item): void {
-    this.selectedConcept = item;
-  }
 
   /**
    * OnINIT is a life cycle hook called by Angular to indicate that
    * Angular is done creating the component.
    */
   public ngOnInit(): void {
-    this.conceptsList = dataJSON.angularConceptsList;
     this.resourcesList = dataJSON.resourcesList;
-    this.selectedConcept = this.conceptsList[0];
   }
+
 }
+

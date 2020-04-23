@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /**
- * Our application routing module
- */
-import { AppRoutingModule } from './app-routing.module';
-/**
  * Import all components
  * Components are a logical piece of code for Angular JS application
  */
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { CarsComponent } from './cars/cars.component';
+/**
+ * Our application routing module
+ */
+import { AppRoutingModule } from './app-routing.module';
 
 /**
  * @NgModule is a directive that declares a compilation for a set of components

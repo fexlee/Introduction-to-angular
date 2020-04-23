@@ -43,5 +43,7 @@ const routes: Routes = [
   // forRoot ->  Creates and configures a module with all the router
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
+
+  // Go to the presentation
 })
 export class AppRoutingModule { }

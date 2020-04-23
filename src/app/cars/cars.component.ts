@@ -5,26 +5,71 @@ const dataJSON = require('../../data/data.json');
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.component.html',
-  styleUrls: ['./cars.component.scss']
+  styleUrls: ['./cars.component.scss'],
 })
 export class CarsComponent implements OnInit {
-
-
+  /**
+   * Interpolation {{}}
+   * Property binding lets you interpolate values into the HTML.
+   * Interpolation: the insertion of data into the view.
+   */
   public title = 'Electric Cars';
+
+
+
+
+
+
+  /**
+   * Structural directives: They shape or reshape the DOM's structure,
+   * typically by adding, removing, or manipulating elements or HTML tags.
+   */
   public cars = [];
+
+
+
+
+
+  /**
+   * Interpolation {{}}
+   * Property binding lets you interpolate values into the HTML.
+   * Interpolation: the insertion of data into the view.
+   */
   public carSelected = 'Select a car';
+
+
+
+
+
 
   // See realtime data binding with interpolation {{}}
   // my favorite car
 
 
+  /** */
 
 
-  constructor() { }
+  constructor() {}
 
+
+
+
+  /**
+   * Select the car
+   */
   public SelectCar(car): void {
     this.carSelected = 'You selected ' + car;
   }
+
+
+  // Let's add my favorite car
+
+
+  /** */
+
+
+
+
 
   // Dependency injection
 
@@ -34,21 +79,19 @@ export class CarsComponent implements OnInit {
    * validate user input, or log directly to the console; they delegate such tasks to services.
    */
 
-   // Example
+  // Example
 
-  // Let's add a new car
-
-
+  // Let's add my favorite car
 
 
 
-
+  /** */
 
 
   /**
    * OnINIT is a life cycle hook called by Angular to indicate that Angular is done creating the component.
    */
-  ngOnInit() {
+  public ngOnInit(): void {
     this.cars = dataJSON.carsList;
   }
 }
