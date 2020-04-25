@@ -39,11 +39,6 @@ export class IndexComponent implements OnInit {
    */
   public resourcesList = [];
 
-
-  constructor(){
-
-  }
-
   /**
    * OnINIT is a life cycle hook called by Angular to indicate that
    * Angular is done creating the component.

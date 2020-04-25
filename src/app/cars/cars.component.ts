@@ -17,16 +17,11 @@ export class CarsComponent implements OnInit {
 
 
 
-
-
-
   /**
    * Structural directives: They shape or reshape the DOM's structure,
    * typically by adding, removing, or manipulating elements or HTML tags.
    */
   public cars = [];
-
-
 
 
 
@@ -36,17 +31,6 @@ export class CarsComponent implements OnInit {
    * Interpolation: the insertion of data into the view.
    */
   public carSelected = 'Select a car';
-
-
-
-
-
-
-  // See realtime data binding with interpolation {{}}
-  // my favorite car
-
-
-  /** */
 
 
   constructor() {}
@@ -64,13 +48,6 @@ export class CarsComponent implements OnInit {
   public SelectCarTest(): string {
     return 'Something';
   }
-  // Let's add my favorite car
-
-
-  /** */
-
-
-
 
 
   // Dependency injection
@@ -85,13 +62,13 @@ export class CarsComponent implements OnInit {
 
   // Let's add my favorite car
 
-public AddCar(car): void {
-  let newCar = car;
-}
+  public AddCar(car): void {
+    let newCar = car;
+  }
 
-public BtnAddCar(): void {
-  this.AddCar('Toyota');
-}
+  public BtnAddCar(): void {
+    this.AddCar('Toyota');
+  }
 
   /** */
 
